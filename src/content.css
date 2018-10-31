@@ -1,0 +1,26 @@
+
+.invert-colors {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+.need-invert {
+    transition: filter .5s ease,-webkit-filter .5s ease;
+}
+.fly-top-right-buttons {
+    font-size: .8em;
+    position: fixed;
+    right: 72px;
+    top: 37px;
+    transform: translateY(-50%);
+    z-index: 2
+}
+
+.fly-left-right-buttons {
+    font-size: 2em;
+    position: fixed;
+    left: 72px;
+    top: 37px;
+    transform: translateY(-50%);
+    z-index: 2
+}
+

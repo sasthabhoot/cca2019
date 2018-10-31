@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="src/content.css" />
+    <link rel="stylesheet" type="text/css" href="src/fullpage.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="vendors/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="src/fullpage.js"></script>
+ 
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#FF00FF', '#4BBFC3', '#54ff9f', '#008080', '#008856'],
+                anchors: ['about', 'aarohan', 'cells', 'members', 'contact'],
+                navigation: true,
+                navigationPosition: 'left',
+                navigationTooltips: ['ABOUT', 'AAROHAN', 'CELLS', 'MEMBERS', 'CONTACT US'],
+                showActiveTooltip: true,
+                menu: '#menu',
+            });
+        });
+    </script>
+ 
+    <style>
+        .section{
+            font-size: 6em;
+            text-align: center;
+        }
+    </style>
+</head>
+ 
+<body>
+    <nav id="menu" class="navbar navbar-fixed-top" role="navigation">
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+    </div>
+    </nav>
+
+    <div class="fly-left-right-buttons">
+    <img src="img/logo.png" />
+    </div>
+    <div class="fly-top-right-buttons">
+    <a href="#" class="link-btn">AAROHAN 2019</a>
+    </div>
+
+    
+
+
+    <div id="fullpage">
+        <div class="section">about</div>
+        <div class="section">aarohan</div>
+        <div class="section">
+            <div class="slide">core cell</div>
+            <div class="slide">wdct</div>
+            <div class="slide">robo cell</div>
+            <div class="slide">e cell</div>
+            <div class="slide">r&d cell</div>
+        </div>
+        <div class="section">members</div>
+        <div class="section">contact us</div>
+    </div>            
+</body>
+</html>
